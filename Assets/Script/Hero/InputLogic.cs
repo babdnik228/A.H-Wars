@@ -5,7 +5,7 @@ using UnityEngine;
 public class InputLogic : MonoBehaviour
 {
     //Изменяемы параметры
-    [SerializeField] private float _speedInput;
+    [SerializeField] private static float _speedInput = 5;
     //Ссылки на компоненты 
     private Animator _animator;
     private Rigidbody _rigidbody;
@@ -35,15 +35,24 @@ public class InputLogic : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.W))
         {
-            
+            _animator.SetBool("D_W", true);
             transform.Translate(direction_W * _speedInput * Time.deltaTime);
-        }       
+        }
+        else
+        {
+            _animator.SetBool("D_W", false);
+        }
     }
     private void Input_S()
     {
         if(Input.GetKey(KeyCode.S))
         {
+            _animator.SetBool("D_S", true);
             transform.Translate(direction_S * _speedInput * Time.deltaTime);
+        }
+        else
+        {
+            _animator.SetBool("D_S", false);
         }
     }
     private void Input_A()
