@@ -17,6 +17,14 @@ public class ByeGun : MonoBehaviour
             }
         }
     }
+    private void OnTriggerExit(Collider other)
+    {
+        HeroManager heroManager = other.GetComponent<HeroManager>();
+        if (heroManager != null)
+        {
+                Panel.SetActive(false);
+        }
+    }
     public void ExitPanel()
     {
         Panel.SetActive(false);
