@@ -33,7 +33,7 @@ public class InputLogic : MonoBehaviour
     }
     private void Input_W()
     {
-        if(Input.GetKey(KeyCode.W))
+        if(Input.GetKey(KeyCode.UpArrow))
         {
             _animator.SetBool("D_W", true);
             transform.Translate(direction_W * _speedInput * Time.deltaTime);
@@ -45,7 +45,7 @@ public class InputLogic : MonoBehaviour
     }
     private void Input_S()
     {
-        if(Input.GetKey(KeyCode.S))
+        if(Input.GetKey(KeyCode.DownArrow))
         {
             _animator.SetBool("D_S", true);
             transform.Translate(direction_S * _speedInput * Time.deltaTime);
@@ -57,7 +57,7 @@ public class InputLogic : MonoBehaviour
     }
     private void Input_A()
     {
-        if(Input.GetKey(KeyCode.A))
+        if(Input.GetKey(KeyCode.LeftArrow))
         {
             _animator.SetBool("D_A", true);
             transform.Translate(direction_A * _speedInput * Time.deltaTime);
@@ -69,7 +69,7 @@ public class InputLogic : MonoBehaviour
     }
     private void Input_D()
     {
-        if(Input.GetKey(KeyCode.D))
+        if(Input.GetKey(KeyCode.RightArrow))
         {
             _animator.SetBool("D_D", true);
             transform.Translate(direction_D * _speedInput * Time.deltaTime);

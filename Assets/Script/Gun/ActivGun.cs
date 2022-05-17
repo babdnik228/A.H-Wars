@@ -12,13 +12,13 @@ public class ActivGun : MonoBehaviour
     }
     private void Update()
     {
-        Gun_Indication();
+        Gun_Indication_Classic();
     }
-    public void Gun_Indication()
+    public void Gun_Indication_Classic()
     {
         if(ItemManager.singolton_ItemManager.is_One_Slot == true)
         {
-            if(Input.GetKey(KeyCode.Q))
+            if(Input.GetKey(KeyCode.Q) && ItemManager.singolton_ItemManager.gun_Classic >= 1)
             {
                 is_ActivGun = true;
                 ItemManager.singolton_ItemManager.basic_Gun.SetActive(true);

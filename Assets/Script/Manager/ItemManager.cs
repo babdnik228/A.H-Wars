@@ -9,6 +9,8 @@ public class ItemManager : MonoBehaviour
     public GameObject basic_Gun;
     //Булевые кнопки
     public bool is_One_Slot;
+    //Число орудий
+    public int gun_Classic;
 
 
     private void Start()

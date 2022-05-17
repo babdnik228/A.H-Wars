@@ -14,7 +14,7 @@ public class EstablishGun : MonoBehaviour
             if(ActivGun.singolton_activGun.is_ActivGun == true)
             {
                 ItemManager.singolton_ItemManager.basic_Gun.GetComponentInChildren<MeshRenderer>().material.color = Color.green;
-                if(Input.GetKeyDown(KeyCode.E))
+                if(Input.GetKeyDown(KeyCode.R))
                 {
                     GameObject gun = Instantiate(object_spawn, point_Spawn.position, Quaternion.identity);
                 }

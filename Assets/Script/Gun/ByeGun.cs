@@ -29,4 +29,12 @@ public class ByeGun : MonoBehaviour
     {
         Panel.SetActive(false);
     }
+    public void BuyGunClassicButton()
+    {
+        if(HeroManager.singolton_HeroManager.coins >= 20)
+        {
+            HeroManager.singolton_HeroManager.coins -= 20;
+            ItemManager.singolton_ItemManager.gun_Classic++;
+        }
+    }
 }
