@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class InputLogic : MonoBehaviour
 {
+    public static InputLogic inputLogic_singolton;
     //Изменяемы параметры
-    [SerializeField] private static float _speedInput = 5;
+     public  float _speedInput = 5;
     //Ссылки на компоненты 
     private Animator _animator;
     private Rigidbody _rigidbody;
@@ -22,7 +23,7 @@ public class InputLogic : MonoBehaviour
     }
     private void Start()
     {
-        
+        inputLogic_singolton = this;
     }
     private void Update()
     {
