@@ -5271,6 +5271,49 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19682540d8a014522a319b1cf788aee2, type: 3}
+--- !u!1 &1326123843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1326123845}
+  - component: {fileID: 1326123844}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1326123844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326123843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1d8bf57e2778e4aa623da5d88f07d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1326123845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326123843}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1339125941
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7268,7 +7311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e2987e896361d34891f0dae43342d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scale: 2.5
+  Scale: 8
 --- !u!81 &1895920201
 AudioListener:
   m_ObjectHideFlags: 0
@@ -7935,7 +7978,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 743082214, guid: cd03a1d78336d054eafb066a229249f5, type: 3}
       propertyPath: coins
-      value: 55
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 743082214, guid: cd03a1d78336d054eafb066a229249f5, type: 3}
+      propertyPath: healthPlayer
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 743082214, guid: cd03a1d78336d054eafb066a229249f5, type: 3}
+      propertyPath: healthMaxPlayer
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1727527030441340297, guid: cd03a1d78336d054eafb066a229249f5, type: 3}
       propertyPath: m_Interpolate
