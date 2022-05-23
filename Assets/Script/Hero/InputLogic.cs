@@ -37,7 +37,9 @@ public class InputLogic : MonoBehaviour
         if(Input.GetKey(KeyCode.UpArrow))
         {
             _animator.SetBool("D_W", true);
-            transform.Translate(direction_W * _speedInput * Time.deltaTime);
+            Vector3 posW = transform.position;
+            posW.z += _speedInput * Time.deltaTime;
+            transform.position = posW;
         }
         else
         {
@@ -49,7 +51,9 @@ public class InputLogic : MonoBehaviour
         if(Input.GetKey(KeyCode.DownArrow))
         {
             _animator.SetBool("D_S", true);
-            transform.Translate(direction_S * _speedInput * Time.deltaTime);
+            Vector3 posS = transform.position;
+            posS.z -= _speedInput * Time.deltaTime;
+            transform.position = posS;
         }
         else
         {
@@ -61,7 +65,9 @@ public class InputLogic : MonoBehaviour
         if(Input.GetKey(KeyCode.LeftArrow))
         {
             _animator.SetBool("D_A", true);
-            transform.Translate(direction_A * _speedInput * Time.deltaTime);
+            Vector3 posA = transform.position;
+            posA.x -= _speedInput * Time.deltaTime;
+            transform.position = posA;
         }
         else
         {
@@ -73,7 +79,9 @@ public class InputLogic : MonoBehaviour
         if(Input.GetKey(KeyCode.RightArrow))
         {
             _animator.SetBool("D_D", true);
-            transform.Translate(direction_D * _speedInput * Time.deltaTime);
+            Vector3 posD = transform.position;
+            posD.x += _speedInput * Time.deltaTime;
+            transform.position = posD;
         }
         else
         {
