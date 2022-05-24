@@ -18,6 +18,7 @@ public class ByeGun : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
+                Dialog_Activator.dialog_activator_singolton.Dialog_Gun_One_Text();
                 StartCoroutine(COR_IByeGun());
             }
         }
