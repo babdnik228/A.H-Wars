@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class Dialog_Activator : MonoBehaviour
 {
-    
+
     //Gun N.P.S
     [SerializeField] private GameObject text_NPS_gun;
     [SerializeField] private GameObject audio_NPS_gun;
@@ -13,7 +13,15 @@ public class Dialog_Activator : MonoBehaviour
     //Gun Logic
     public void Dialog_Gun_One_Text()
     {
-        if(Dialog_Manager.dialog_manager_singolton.is_gun_NPS == true)
+        if (Dialog_Manager.dialog_manager_singolton.is_gun_NPS == true)
+        {
+            StartCoroutine(COR_Dialog_Gun());
+        }
+    }
+    //Coins
+    public void Dialog_Coins_One_Text()
+    {
+        if (Dialog_Manager.dialog_manager_singolton.is_coins_NPS == true)
         {
             StartCoroutine(COR_Dialog_Gun());
         }

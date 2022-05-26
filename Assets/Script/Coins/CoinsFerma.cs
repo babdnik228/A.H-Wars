@@ -11,6 +11,7 @@ public class CoinsFerma : MonoBehaviour
     [SerializeField] private GameObject bg_blac;
     [SerializeField] private GameObject player;
     [SerializeField] private UI_Button_Help button_Help;
+    [SerializeField] private Dialog_Activator dialog;
 
     private void OnTriggerStay(Collider other)
     {
@@ -19,6 +20,7 @@ public class CoinsFerma : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
+                dialog.Dialog_Coins_One_Text();
                 button_Help.button_helper.SetActive(false);
                 StartCoroutine(COR_IByeGun());
             }
