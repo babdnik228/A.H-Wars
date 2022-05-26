@@ -19,7 +19,7 @@ public class Evelator : MonoBehaviour
         }
     }
     private IEnumerator Cor_Evelator()
-    {
+    { 
         Blac_BG.SetActive(true);
         yield return new WaitForSeconds(2f);
         player.transform.position = finish_point.transform.position;

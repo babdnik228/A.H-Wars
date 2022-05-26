@@ -5,14 +5,11 @@ using System.Collections.Generic;
 
 public class Dialog_Activator : MonoBehaviour
 {
-    public static Dialog_Activator dialog_activator_singolton;
+    
     //Gun N.P.S
     [SerializeField] private GameObject text_NPS_gun;
     [SerializeField] private GameObject audio_NPS_gun;
-    private void Start()
-    {
-        dialog_activator_singolton = this;
-    }
+
     //Gun Logic
     public void Dialog_Gun_One_Text()
     {
