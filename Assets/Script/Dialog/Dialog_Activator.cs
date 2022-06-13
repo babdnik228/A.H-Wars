@@ -33,8 +33,5 @@ public class Dialog_Activator : MonoBehaviour
         audio_NPS_gun.SetActive(true);
         yield return new WaitForSeconds(2f);
         Dialog_Manager.dialog_manager_singolton.is_gun_NPS = false;
-        yield return new WaitForSeconds(4f);
-        text_NPS_gun.SetActive(false);
-        audio_NPS_gun.SetActive(false);
     }
 }

@@ -12,6 +12,7 @@ public class ButtonNPS : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private UI_Button_Help button_Help;
     [SerializeField] private Dialog_Activator dialog_activator;
+    [SerializeField] private GameObject dialog_exit;
 
     private void OnTriggerStay(Collider other)
     {
@@ -32,6 +33,8 @@ public class ButtonNPS : MonoBehaviour
         Camera_ByeGun.SetActive(false);
         Camera_Main.SetActive(true);
         InputLogic.inputLogic_singolton._speedInput = 5;
+        dialog_exit.SetActive(false);
+
     }
     public void BuyGunClassicButton()
     {
